@@ -1,0 +1,72 @@
+/*
+  선언
+    속성명 : 속성값;
+  선언 블록
+    {
+      속성명 : 속성값;
+    }
+  한 세트
+  selector {
+    속성명 : 속성값;
+  }
+*/
+/* 요소 선택자 */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+  margin:0;
+  font-size:16px;
+  line-height:180%;
+  font-family:'Noto Sans KR', sans-serif;
+  /*
+  font-family:"돋움", "Dotum", "arial", sans-serif;
+  font-family:"굴림", "Gulim", "arial", sans-serif;
+  font-family:"맑은 고딕", "Malgun gothic", "arial", sans-serif;
+  */
+}
+header {
+  /*
+    1. 유저 선언 스타일시트
+    2. UA 스타일시트 (reset.css / normalize.css)
+  */
+  position: fixed;
+        /* absolute : 절대값
+           relative : 상대값
+           fixed    : 고정값
+           좌표 시스템을 이용하겠다.
+        */
+  left:0;
+  right:0;
+  top:0;
+  z-index:100;
+  background:rgba(255,255,255,0.5);
+  box-shadow:1px 1px 1px rgba(0,0,0,0.15);
+}
+header h1 {
+  float:left;
+  margin:0;
+}
+header h1 a {
+  display:block;
+  padding:5px 15px;
+  color:#000;
+  text-decoration:none;
+}
+header nav {
+  float:right;
+  padding:0;
+}
+header ul {
+  padding:0;
+  margin:0;
+}
+header li {
+  float:left;
+  list-style:none;
+}
+header li a {
+  display:block;
+  color:#000;
+  text-decoration:none;
+  padding:8px 5px;
+}
